@@ -1,0 +1,91 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-07T18:52:34.811Z",
+        "line": 3,
+        "name": "Verify if given given API has all parameters provided by using GET http request",
+        "description": "",
+        "id": "validating-the-intigral-api-provided-by-using-get-http-request;verify-if-given-given-api-has-all-parameters-provided-by-using-get-http-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 851102900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the Intigral endpoint url with the apikey webB2BGDMSTGExy0sVDlZMzNDdUyZ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "webB2BGDMSTGExy0sVDlZMzNDdUyZ",
+                  "offset": 42
+                }
+              ],
+              "location": "IntigralValidationStepDefinition.the_Intigral_endpoint_url_with_the_apikey(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3223922100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user calls the \"getIntigralAPI\" with GET http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"getIntigralAPI\"",
+                  "offset": 19
+                }
+              ],
+              "location": "IntigralValidationStepDefinition.the_user_calls_the_with_GET_http_request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1491300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call got success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 42
+                }
+              ],
+              "location": "IntigralValidationStepDefinition.the_API_call_got_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003cio.restassured.path.json.JsonPath@3fae596\u003e but was:\u003c\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:118)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepdefinition.IntigralValidationStepDefinition.the_API_response_schema_should_be_in_proper_format(IntigralValidationStepDefinition.java:67)\r\n\tat ✽.the API response schema should be in proper format(file:src/test/java/features/IntigralValidation.feature:7)\r\n",
+              "duration": 655118300,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "the API response schema should be in proper format",
+            "match": {
+              "location": "IntigralValidationStepDefinition.the_API_response_schema_should_be_in_proper_format()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Validating the Intigral API provided by using GET http request",
+    "description": "",
+    "id": "validating-the-intigral-api-provided-by-using-get-http-request",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/IntigralValidation.feature",
+    "tags": []
+  }
+]
